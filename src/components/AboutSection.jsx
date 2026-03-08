@@ -36,9 +36,10 @@ const TAB_DATA = [
           "Express",
           "Mongo DB",
           "PostgreSQL",
-          "Sequelize",
+          "TypeScript",
           "JavaScript",
           "React",
+          "Next.js",
           "DSA",
           "Machine Learning",
           "Deep Learning",
@@ -98,7 +99,7 @@ const TAB_DATA = [
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
-  const [ startTransition] = useTransition();
+  const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
     startTransition(() => {
