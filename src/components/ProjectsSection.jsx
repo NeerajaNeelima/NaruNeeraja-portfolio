@@ -6,6 +6,15 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 5,
+    title: "Gym Website",
+    description: "Gym Fluencer Sigma website with animations",
+    image: "/images/projects/gym.png",
+    tag: ["All", "Animation"],
+    gitUrl: "https://github.com/NeerajaNeelima/GymFluencer",
+    previewUrl: "https://gym-fluencer-sigma.vercel.app/",
+  },
+  {
     id: 11,
     title: "Screate Reveal Animation",
     description: "When Hover on the content then encrpted message starts decryption",
@@ -158,15 +167,7 @@ const projectsData = [
     gitUrl: "https://github.com/NeerajaNeelima/weatherapp",
     previewUrl: "https://weatherapp-rho-topaz.vercel.app/",
   },
-  {
-    id: 5,
-    title: "Gym Website",
-    description: "Gym Fluencer Sigma website with animations",
-    image: "/images/projects/gym.png",
-    tag: ["All", "Animation"],
-    gitUrl: "https://github.com/NeerajaNeelima/GymFluencer",
-    previewUrl: "https://gym-fluencer-sigma.vercel.app/",
-  },
+  
   // {
   //   id: 6,
   //   title: "Movie Recommendation System",
