@@ -1,5 +1,5 @@
 "use client";
-import React, { useTransition, useState } from "react";
+import React, { useState } from "react";
 
 import TabButton from "./TabButton";
 import { motion } from "framer-motion";
@@ -99,12 +99,9 @@ const TAB_DATA = [
 
 const AboutSection = () => {
   const [tab, setTab] = useState("skills");
-  const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
-    startTransition(() => {
-      setTab(id);
-    });
+    setTab(id);
   };
 
   return (
@@ -168,7 +165,7 @@ const AboutSection = () => {
             </TabButton>
           </div>
 
-          <div className="mt-8">
+          <div className="mt-8" key={tab}>
             {TAB_DATA.find((t) => t.id === tab)?.content}
           </div>
         </div>
