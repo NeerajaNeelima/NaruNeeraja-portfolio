@@ -107,7 +107,7 @@ const projectsData = [
     id: 22,
     title: "Lamborghinir Car Animation",
     description: "Lamborghini Car sliding animation",
-    image: "/images/projects/lamborginir.png",
+    image: "/images/projects/lamborgini.png",
     tag: ["Animations","All"],
     gitUrl: "https://github.com/NeerajaNeelima/Lamborghini_Slider",
     previewUrl: "https://lamborghini-slider.vercel.app/",
